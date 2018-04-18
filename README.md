@@ -3,7 +3,15 @@
 ### Xinyi Huang, Andrew Shao, Bill Ni
 
 ## Background
-Development of Deque from scratch
+Development of deque from scratch
 
 ## Plan
-Use ArrayList as underlying container
+1. Use ArrayList as underlying container
+2. Implement methods
+	a. add / addFirst
+	b. getFirst / getLast
+	c. contains
+	d. Iterator
+	e. peek / peekLast
+	f. remove (first element) / remove (by value) / removeLastOccurence / removeLast
+	g. size
