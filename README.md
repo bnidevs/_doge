@@ -3,7 +3,7 @@
 ### Xinyi Huang, Andrew Shao, Bill Ni
 
 ## Background
-	Development of Deque from scratch
+Development of Deque from scratch
 
 ## Plan
-	Use ArrayList as underlying container
+Use ArrayList as underlying container
