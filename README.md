@@ -7,11 +7,11 @@ Development of deque from scratch
 
 ## Plan
 1. Use ArrayList as underlying container
-2. Implement methods <br>
-	a. add / addFirst <br>
-	b. getFirst / getLast <br>
-	c. contains <br>
-	d. Iterator <br>
-	e. peek / peekLast <br>
-	f. remove (first element) / remove (by value) / removeLastOccurence / removeLast <br>
-	g. size <br>
+2. Implement methods in the following order: <br>
+	a. getFirst / getLast <br>
+	b. size <br>
+	c. add / addFirst <br>
+	d. remove (first element) / removeLast <br>
+	e. Iterator / descendingIterator <br>
+	f. contains <br>
+	g. remove (by value) / removeLastOccurence <br>
