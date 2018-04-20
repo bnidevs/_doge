@@ -10,8 +10,9 @@ Development of deque from scratch
 2. Implement methods in the following order: <br>
 	a. getFirst / getLast <br>
 	b. size <br>
-	c. add / addFirst <br>
-	d. remove (first element) / removeLast <br>
-	e. Iterator / descendingIterator <br>
-	f. contains <br>
-	g. remove (by value) / removeLastOccurence <br>
+	c. isEmpty <br>
+	d. add / addFirst <br>
+	e. remove (first element) / removeLast <br>
+	f. Iterator / descendingIterator <br>
+	g. contains <br>
+	h. remove (by value) / removeLastOccurence <br>

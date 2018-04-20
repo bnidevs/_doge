@@ -8,6 +8,8 @@ public interface Deque<T> extends Iterable<T>{
 
     public int size();
 
+    public boolean isEmpty();
+
     public boolean add( T x );
 
     public void addFirst( T x );
