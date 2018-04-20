@@ -1,6 +1,8 @@
-public interface Deque<T>{
+import java.util.Iterator;
 
-    public T getFIrst();
+public interface Deque<T> extends Iterable<T>{
+
+    public T getFirst();
 
     public T getLast();
 
