@@ -158,6 +158,15 @@ public class QQKachoo<T> implements Deque<T>{
 	    
 	System.out.println(t.getFirst());
 	System.out.println(t.getLast());
-
+			   
+	System.out.println(t.remove());	
+	System.out.println(t.removeLast());		   
+				 
+	System.out.println(t.contains("d"));
+        System.out.println(t.contains("c")); 
+			   
+	System.out.println(t.remove("d"));
+	System.out.println(t.remove("c"));		   
+				      
     }
 }
