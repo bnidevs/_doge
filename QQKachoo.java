@@ -124,5 +124,36 @@ public class QQKachoo<T> implements Deque<T>{
 		
 	}
 	
-	public static void main(String[] args){}
+	public static void main(String[] args){
+	    //some comes from the qaf
+	    QQKachoo<String> t = new QQKachoo<String>();
+	    System.out.println("Is the deque empty? " + t.isEmpty()); //Expecting true;
+	    //System.out.println(t.removeFirstOccurrence("polly")); //Will throw exception
+	    System.out.println("Size: " + t.size());//Expecting 0
+	    //Both methods below will throw exceptions
+	    //t.removeLast();
+	    //t.removeFirst();
+	    System.out.println("--------END-------");
+	    t.addFirst("bob");
+	    System.out.println("bob");
+	    t.addFirst("tom");
+	    System.out.println("tom");
+	    t.addFirst("jerry");
+	    System.out.println("jerry");
+	    System.out.println("-------Front-------");
+	    System.out.println("Size: " + t.size());//Expecting 3
+	    
+	    t.addLast("a");
+	    System.out.println("a");
+	    t.addLast("b");
+	    System.out.println("b");
+	    t.addLast("c");
+	    System.out.println("c");
+	    System.out.println("-------Front-------");
+	    System.out.println("Size: " + t.size());//Expecting 6
+	    
+
+
+
+	}
 }
