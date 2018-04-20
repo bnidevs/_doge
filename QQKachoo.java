@@ -147,11 +147,11 @@ public class QQKachoo<T> implements Deque<T>{
 	System.out.println("-------Front-------");
 	System.out.println("Size: " + t.size());//Expecting 3
 	    
-	t.addLast("a");
+	t.add("a");
 	System.out.println("a");
-	t.addLast("b");
+	t.add("b");
 	System.out.println("b");
-	t.addLast("c");
+	t.add("c");
 	System.out.println("c");
 	System.out.println("-------Front-------);
 	System.out.println("Size: " + t.size());//Expecting 6
@@ -167,6 +167,8 @@ public class QQKachoo<T> implements Deque<T>{
 			   
 	System.out.println(t.remove("d"));
 	System.out.println(t.remove("c"));		   
-				      
+	
+			   
+	System.out.		   
     }
 }
