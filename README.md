@@ -19,26 +19,26 @@ Development of deque from scratch
 
 ## Reasoning
 
-1. getFirst / getLast
+1. getFirst / getLast <br>
 	Since this was a collection from which we could either take from the back or front, we decided to include methods for both of those operations.
 
-2. size
+2. size <br>
 	As with every collection, we needed an accessor for the size of the collection.
 
-3. isEmpty
+3. isEmpty <br>
 	For some external development, thinkers may need this for the boolean expression of a while loop, so we included it to make their lives easier.
 
-4. add / addFirst
+4. add / addFirst <br>
 	Most collections have methods that would add elements, but since this collection can remove elements from either side, we decided we should be able to add elements to either side too.
 
-5. remove (first element) / removeLast
+5. remove (first element) / removeLast <br>
 	Same reasoning as add and addFirst
 	
-6. Iterator / descendingIterator
+6. Iterator / descendingIterator <br>
 	We included this method so that future thinkers can implement a for-each loop on this collection without issues.
 
-7. contains
+7. contains <br>
 	A method that checks to see if an element is in the collection is rather helpful to determine whether it is possible to remove by value
 	
-8. remove (by value) / removeLastOccurence
+8. remove (by value) / removeLastOccurence <br>
 	We wrote this method so that removing something specific wouldn't be such a hassle for future thinkers. The removeLastOccurence was implemented because of the bidirectionality of this collection.
