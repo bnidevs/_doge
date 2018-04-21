@@ -19,6 +19,13 @@ Development of deque from scratch
 
 ## Reasoning
 
+### Container
+
+*ArrayList* <br>
+	We picked the ArrayList as our container because it was relatively simple to code on top of the existing class. We are unsure of efficiency vs the doubly-linked-list, but the methods that required us to loop thru the container were much easier to write compared to the doubly-linked-list.
+
+### Methods
+
 1. getFirst / getLast <br>
 	Since this was a collection from which we could either take from the back or front, we decided to include methods for both of those operations.
 
