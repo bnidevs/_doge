@@ -129,6 +129,7 @@ public class QQKachoo<T> implements Deque<T>{
     }
 	
     public static void main(String[] args){
+	/*
 	//some comes from the qaf
 	QQKachoo<String> t = new QQKachoo<String>();
 	System.out.println("Is the deque empty? " + t.isEmpty()); //Expecting true;
@@ -171,7 +172,7 @@ public class QQKachoo<T> implements Deque<T>{
 	t.add("jerry");
 	t.add("jerry");   
 	System.out.println(t.removeLastOccurrence("jerry"));
-	
+	*/
  
     }
 }
