@@ -14,43 +14,43 @@ public class Driver {
 	System.out.println("adding ints [0,9) to josh at the front.....");
 	for (int i = 0; i < 10; i++) { 
 	    josh.addFirst(i);
-	    System.out.println(josh.peekFirst());
+	    System.out.println(josh.getFirst());
 	    //should print 0, 1, 2 ... 9
 	}
 
-	System.out.println( "josh: " + josh );
+	//System.out.println( "josh: " + josh );
 	
 	System.out.println("adding ints [10,19) to josh at the back.....");
 	for (int i = 10; i < 20; i++) {
 	    josh.add(i);
-	    System.out.println(josh.peekLast());
+	    System.out.println(josh.getLast());
 	    //should print 10, 11, 12 ... 19
 	}
 
-	System.out.println( "josh: " + josh );
+	//System.out.println( "josh: " + josh );
 	
 	System.out.println("removing the first five elements of josh.....");
 	for (int i = 0; i < 5; i++) {
-	    System.out.println(josh.removeFirst());
+	    System.out.println(josh.remove());
 	    //should print 9, 8, 7, 6, 5
 	}
 
-	System.out.println( "josh: " + josh );
+	//System.out.println( "josh: " + josh );
 	
 	System.out.println("removing the first occurence of 4.....");
-	josh.removeFirstOccurrence(4);
+	josh.remove(4);
 	System.out.println("printing the first element of josh.....");
-	System.out.println(josh.peekFirst()); //should be 3
+	System.out.println(josh.getFirst()); //should be 3
 	System.out.println("removing the first occurence of 19.....");
-	josh.removeFirstOccurrence(19);
+	josh.remove(19);
 	System.out.println("printing the last element of josh.....");
-	System.out.println(josh.peekLast()); //should be 18
+	System.out.println(josh.getLast()); //should be 18
 	System.out.println("adding int 18 to the front of josh.....");
 	josh.addFirst(18);
 	System.out.println("removing the last occurence of 18.....");
 	josh.removeLastOccurrence(18);
 	System.out.println("printing the last element of josh.....");
-	System.out.println(josh.peekLast()); //should be 17
+	System.out.println(josh.getLast()); //should be 17
 	System.out.println("printing the size of josh.....");
 	System.out.println(josh.size());//should be 13
 	System.out.println("testing iterator.....");
@@ -66,7 +66,7 @@ public class Driver {
 	    ints.remove();
 	}
 
-	System.out.println( "josh: " + josh );
+	//System.out.println( "josh: " + josh );
 				       
     }
 }
