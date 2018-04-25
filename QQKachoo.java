@@ -5,58 +5,72 @@ public class QQKachoo<T> implements Deque<T>{
 
     ArrayList<T> _que;
 	
+	//constructor
     public QQKachoo() {
 	_que = new ArrayList();
     }
 
+    //returns first element in the deque
     public T getFirst() {
 	return _que.get( 0 );
     }
 
+    //returns last element in the deque
     public T getLast() {
 	return _que.get( _que.size() - 1 );
     }
 
+    //returns size of the deque
     public int size() {
 	return _que.size();
     }
 
+    //returns true if the deque is empty, false if not
     public boolean isEmpty() {
 	return _que.isEmpty();
     }
 
+    //adds element to the end of the deque
     public boolean add( T x ) {
 	return _que.add( x );
     }
 
+    //adds element to the beginning of the deque
     public  void addFirst( T x ) {
 	_que.add( 0, x );
     }
 
+    //removes the first element of the deque and returns it
     public T remove() {
 	return _que.remove( 0 );
     }
 
+    //removes the last element of the deque and returns it
     public T removeLast() {
 	return _que.remove( _que.size() - 1 );
     }
 
+    //returns an Iterator for the deque
     public Iterator<T> iterator() {
 	return new QQIterator();
     }
 	
+	//returns an Iterator that returns the elements in reverse order for the deque
     public Iterator<T> descendingIterator() {
 	return new QQDescendingIterator();
     }
 	
+	//checks to see if x is in the deque
     public boolean contains( T x ) {
 	return _que.contains( x );
     }
 	
+	//removes a specific element from the deque by value
     public boolean remove( T x ) {
 	return _que.remove( x );
     }
 	
+	//removes the last occurrence of a specific element from the deque by value
     public boolean removeLastOccurrence( T x ) {
 	Iterator<T> it = descendingIterator();
 	T i;
@@ -70,6 +84,7 @@ public class QQKachoo<T> implements Deque<T>{
 	return false;
     }
 	
+	//private class for Iterator of deque
     private class QQIterator implements Iterator<T> {
 		
 	private boolean _okToRemove;
@@ -99,6 +114,7 @@ public class QQKachoo<T> implements Deque<T>{
 		
     }
 	
+	//private class for DescendingIterator of deque
     private class QQDescendingIterator implements Iterator<T> {
 		
 	private boolean _okToRemove;
