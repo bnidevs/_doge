@@ -170,7 +170,7 @@ public class QQKachoo<T> implements Deque<T>{
 	System.out.println("b");
 	t.add("c");
 	System.out.println("c");
-	System.out.println("-------Front-------);
+	System.out.println("-------Front-------");
 	System.out.println("Size: " + t.size());//Expecting 6
 	    
 	System.out.println(t.getFirst());
@@ -189,6 +189,5 @@ public class QQKachoo<T> implements Deque<T>{
 	t.add("jerry");   
 	System.out.println(t.removeLastOccurrence("jerry"));
 	*/
- 
     }
 }
