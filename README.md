@@ -13,7 +13,7 @@ Development of deque from scratch
 	c. isEmpty <br>
 	d. add / addFirst <br>
 	e. remove (first element) / removeLast <br>
-	f. Iterator / descendingIterator <br>
+	f. iterator / descendingIterator <br>
 	g. contains <br>
 	h. remove (by value) / removeLastOccurence <br>
 
@@ -41,7 +41,7 @@ Development of deque from scratch
 5. remove (first element) / removeLast <br>
 	Same reasoning as add and addFirst
 	
-6. Iterator / descendingIterator <br>
+6. iterator / descendingIterator <br>
 	We included this method so that future thinkers can implement a for-each loop on this collection without issues.
 
 7. contains <br>
