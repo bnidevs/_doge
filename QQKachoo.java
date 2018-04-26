@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.NoSuchElementException;
 
 public class QQKachoo<T> implements Deque<T>{
 
@@ -12,11 +13,15 @@ public class QQKachoo<T> implements Deque<T>{
 
     //returns first element in the deque
     public T getFirst() {
+	if ( isEmpty() )
+		throw new NoSuchElementException();
 	return _que.get( 0 );
     }
 
     //returns last element in the deque
     public T getLast() {
+	if ( isEmpty() )
+		throw new NoSuchElementException();
 	return _que.get( _que.size() - 1 );
     }
 
@@ -42,11 +47,15 @@ public class QQKachoo<T> implements Deque<T>{
 
     //removes the first element of the deque and returns it
     public T remove() {
+	if ( isEmpty() )
+		throw new NoSuchElementException();
 	return _que.remove( 0 );
     }
 
     //removes the last element of the deque and returns it
     public T removeLast() {
+	if ( isEmpty() )
+		throw new NoSuchElementException();
 	return _que.remove( _que.size() - 1 );
     }
 
